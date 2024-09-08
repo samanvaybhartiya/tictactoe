@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategray;
+}
+
+/* Main Contain Styles */
+#mainContainer {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw 5vh 5vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ContainerOne Styles */
+#containerOne {
+    width: 90%;
+    font-size: 60px;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    animation: header 2s ease-in;
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+/* Container Two Styles */
+#containerTwo {
+    width: 50%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boxes {
+    width: 380px;
+    height: 380px;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    font-size: 50px;
+
+    text-align: center;
+    border-radius: 9px;
+    background-color: #88d4ca;
+    box-shadow: 5px 11px 54px -2px rgba(0, 0, 0, 0.78);
+
+    animation: board 2s ease-in;
+}
+
+@keyframes board {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+/* Container Three Styles */
+#ContainerThree {
+    width: 50%;
+    height: 500px;
+    margin-left: 0px;
+    padding: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Choice div styles */
+#Choice {
+    width: 300px;
+    height: 200px;
+    padding: 2px;
+    border-radius: 30px;
+    background: rgba(28, 28, 28, 0.405);
+    box-shadow: 0px 0px 58px -17px rgba(0, 0, 0, 0.222);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s ease-in;
+}
+
+#choicePara {
+    width: 300px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+
+    align-self: flex-end;
+}
+
+#Choice input {
+    display: none;
+}
+
+#Choice label {
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 5px 5px 0px;
+    padding: 2px;
+    border: 1px solid rgb(119, 118, 118);
+    background-color: rgba(0, 0, 0, 0.39);
+
+    align-self: flex-start;
+}
+
+#Choice label:hover {
+    background-color: rgba(0, 0, 0, 0.176);
+}
+
+#startBtn {
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    font-family: 'Source Code Pro', monospace;
+    border-color: #10998c;
+    background-color: #10998c;
+
+    align-self: flex-start;
+}
+
+#startBtn:hover {
+    background-color: #14bdac;
+    border-color: #14bdac;
+}
+
+
+/* ScoreCard div styles */
+#scoreCard {
+    width: 300px;
+    height: 200px;
+    padding: 2px;
+    border-radius: 30px;
+    background: rgba(28, 28, 28, 0.405);
+    box-shadow: 0px 0px 58px -17px rgba(0, 0, 0, 0.222);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.1s ease-out;
+}
+
+#scoreX {
+    width: 250px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin: 20px 5px 0px 10px;
+    padding: 2px;
+    border: 1px solid rgb(119, 118, 118);
+    background-color: rgba(0, 0, 0, 0.39);
+
+    align-self: flex-start;
+}
+
+#scoreO {
+    width: 250px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 5px 0px 10px;
+    padding: 2px;
+    border: 1px solid rgb(119, 118, 118);
+    background-color: rgba(0, 0, 0, 0.39);
+
+    align-self: flex-start;
+}
+
+#scoreMsg {
+    width: 300px;
+    height: 30px;
+    font-size: 22px;
+    padding: 2px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-align: center;
+}
+
+#replayBtn {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 8px;
+    border-style: solid;
+    margin: 0px 5px 5px 5px;
+    border-color: #9ae67d;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #9ae67d;
+
+    align-self: flex-end;
+}
+
+#replayBtn:hover {
+    border-color: #9be67d93;
+    background-color: #9be67d93;
+}
+
+#restartBtn {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 8px;
+    border-style: solid;
+    margin: 0px 5px 5px 5px;
+    border-color: #12c9ff;
+    background-color: #12c9ff;
+    align-self: flex-end;
+}
+
+#restartBtn:hover {
+    border-color: #12c8ff9a;
+    background-color: #12c8ff9a;
+}

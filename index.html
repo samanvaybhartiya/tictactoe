@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Karla&family=Outfit:wght@200&family=Roboto+Mono:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Container Displayed when the game start -->
+    <div id="mainContainer">
+        <!-- flex item one -->
+        <div id="containerOne">
+            Tic Tac Toe
+        </div>
+
+        <!-- flex item two -->
+        <div id="containerTwo">
+            <section id="boxes">
+                <div id="box" name="1">X</div>
+                <div id="box" name="2" style="color: rgba(0, 0, 0,0.5);">O</div>
+                <div id="box" name="3" style="color: rgba(0, 0, 0,0.5);">O</div>
+                <div id="box" name="4" style="color: rgba(0, 0, 0,0.5);">O</div>
+                <div id="box" name="5">X</div>
+                <div id="box" name="6" style="color: rgba(0, 0, 0,0.5);">O</div>
+                <div id="box" name="7" style="color: rgba(0, 0, 0,0.5);">X</div>
+                <div id="box" name="8" style="color: rgba(0, 0, 0,0.5);">O</div>
+                <div id="box" name="9">X</div>
+            </section>
+        </div>
+
+        <!-- flex item three-->
+        <section id="ContainerThree">
+
+            <!-- Div one : start game -->
+            <div id="Choice">
+                <p id="choicePara">Choose any one</p>
+                <input type="radio" name="selectPlayer" id="x" value="O">
+                <label for="x">X</label>
+                <input type="radio" name="selectPlayer" id="o" value="O">
+                <label for="o">O</label>
+                <button id="startBtn">Lets Play</button>
+            </div>
+
+            <!-- Div two : score tracker -->
+            <div id="scoreCard">
+                <p id="scoreX">score x : </p>
+                <p id="scoreO">score o : </p>
+                <p id="scoreMsg"><span>X</span> wins</p>
+                <button id="replayBtn">Replay</button>
+                <button id="restartBtn">Restart</button>
+            </div>
+        </section>
+
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
